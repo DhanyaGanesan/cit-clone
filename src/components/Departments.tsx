@@ -33,9 +33,9 @@ const Departments = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {departments.map((dept, index) => (
           <div
-            key={index}
-            className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 flex flex-col items-center text-center"
-          >
+  key={index}
+  className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 hover:scale-105 transition duration-300 flex flex-col items-center text-center"
+>
             {/* ICON */}
             <div className="text-4xl text-blue-600 mb-4">
               {dept.icon}

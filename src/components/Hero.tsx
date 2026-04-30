@@ -1,21 +1,30 @@
+import { motion } from "framer-motion";
+
 const Hero = () => {
   return (
     <div
-       id="home" className="h-screen flex flex-col justify-center items-center text-center px-4 bg-cover bg-center"
+      id="home"
+      className="h-screen flex items-center justify-center bg-cover bg-center"
       style={{
-        backgroundImage: "url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1')",
+        backgroundImage:
+          "url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1')",
       }}
     >
-      <div className="bg-black/50 p-10 rounded-xl">
-        <h1 className="text-5xl font-bold text-white mb-4">
+      <div className="bg-black/60 p-10 rounded-xl text-center">
+        <motion.h1
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-5xl font-bold text-white mb-4"
+        >
           Chennai Institute of Technology
-        </h1>
+        </motion.h1>
 
-        <p className="text-lg text-gray-200 max-w-xl mb-6">
-          Empowering students with knowledge, innovation, and excellence in engineering education.
+        <p className="text-lg text-gray-200 mb-6">
+          Empowering students with innovation and excellence
         </p>
 
-        <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+        <button className="bg-blue-600 px-6 py-3 rounded-lg text-white hover:bg-blue-700 transition">
           Explore More
         </button>
       </div>

@@ -6,7 +6,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center px-8 py-4 shadow-md bg-white sticky top-0 z-50">
+    <div className="flex justify-between items-center px-10 py-4 bg-white/80 backdrop-blur-md shadow-md sticky top-0 z-50">
       
       {/* Logo */}
       <h1
@@ -47,11 +47,13 @@ const Navbar = () => {
         </li>
 
         <li
-          onClick={() => scrollToSection("footer")}
+          onClick={() => scrollToSection("contact")}
           className="cursor-pointer hover:text-blue-600"
         >
           Contact
         </li>
+
+        
       </ul>
     </div>
   );
